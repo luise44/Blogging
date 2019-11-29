@@ -1,6 +1,6 @@
 # Published
 Published in Azure
-https://blogfortest1.azurewebsites.net/
+https://blogfortest1.azurewebsites.net/ 
 
 # Editor User
 user: useradmin@gmail.com
