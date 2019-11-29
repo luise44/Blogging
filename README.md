@@ -17,7 +17,7 @@ https://blogfortest1.azurewebsites.net/Posts/ViewPost/id  shows post content (fo
 https://blogfortest1.azurewebsites.net/Posts/CreatePost  for authenticated users
 
 
-#API Endpoints
+# API Endpoints
 For pending: GET https://blogfortest1.azurewebsites.net/api/posts/pending
 To approve: GET https://blogfortest1.azurewebsites.net/api/posts/approve/id
 To reject: GET https://blogfortest1.azurewebsites.net/api/posts/reject/id
