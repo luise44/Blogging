@@ -1,0 +1,42 @@
+﻿@model IEnumerable<PostModel>
+
+<div class="">
+
+    <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm" style="background-color: cadetblue;">
+        <div class="lh-100">
+            <h6 class="mb-0 text-white lh-100">Posts for approving</h6>
+        </div>
+    </div>
+
+
+    <div class="my-3 p-3 bg-white rounded shadow-sm">
+        @foreach (var post in Model)
+        {
+            <div class="media text-muted mt-2">
+                <div class="col-2 text-center">
+                    <div class="col-12">
+                        <img src="~/img/img_avatar.png" alt="Avatar" class="avatar">
+                    </div>
+                    <div class="col-12">
+                        <span class="small">@post.UserName</span>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="col-12">
+                        <strong>@post.Date</strong>
+                    </div>
+                    <div class="col-12">
+                        <p class="media-body pb-3 mb-0 small lh-125">
+                            <strong class="d-block text-gray-dark"></strong>
+                            @post.Content
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <a class="btn btn-primary" asp-controller="Posts" asp-action="ViewPost" asp-route-id="@post.Id">View</a>
+                </div>
+            </div>
+        }
+    </div>
+
+</div>

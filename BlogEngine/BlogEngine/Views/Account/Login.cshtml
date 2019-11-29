@@ -1,0 +1,8 @@
+﻿@model LoginModel
+
+<form class="form-signin" method="post">
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <input asp-for="Email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="" style="background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+    <input asp-for="Password" type="password" id="inputPassword" class="form-control" placeholder="Password" required="" style="background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+</form>

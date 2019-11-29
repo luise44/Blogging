@@ -1,0 +1,25 @@
+﻿@model BlogEngine.Models.PostModel
+
+<div class="container mt-5">
+    <main role="main">
+
+        <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm" style="background-color: cadetblue;">
+            <div class="lh-100">
+                <h6 class="mb-0 text-white lh-100">New Post</h6>
+            </div>
+        </div>
+
+        <form method="post">
+            <div class="row mt-4">
+                <div class="col">
+                    <textarea asp-for="Content" class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Write a  new post"></textarea>
+                </div>                
+            </div>
+            <div class="row mt-2">
+                <div class="col">
+                    <input asp-controller="Posts" asp-action="SavePost" type="submit" class="btn btn-primary float-right" value="Save" />
+                </div>
+            </div>
+        </form>
+    </main>
+</div>

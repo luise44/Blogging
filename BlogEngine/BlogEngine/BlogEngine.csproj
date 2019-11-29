@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <UserSecretsId>ee97fe7c-e0a5-4008-b745-5bdd1320ad38</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="BlogEngine.db" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="BlogEngine.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlogEngine.Core\BlogEngine.Core.csproj" />
+    <ProjectReference Include="..\BlogEngine.Data\BlogEngine.Data.csproj" />
+    <ProjectReference Include="..\BlogEngine.Domain.Services\BlogEngine.Domain.Services.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+
+</Project>
